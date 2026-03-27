@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Araceli Montans | Photography Portfolio</title>
+    <meta name="description"
+        content="Portfolio de fotografía artística y editorial por Araceli Montans. Especializada en retratos en blanco y negro con una visión estética y limpia.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <nav class="container">
+            <div class="logo">
+                <a href="#hero"><img src="ara-logo.png" alt="ARAMONTANS Fotografia" id="logo-img"></a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#portfolio">Galería</a></li>
+                <li><a href="#about">Visión</a></li>
+                <li><a href="#contact">Contacto</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content container">
+                <h1 class="fade-in">La esencia de la fotografia.</h1>
+                <p class="fade-in delay-1">Capturando la profundidad del alma.</p>
+            </div>
+            <div class="hero-image-wrapper">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80"
+                    alt="Araceli Montans Photography Hero" class="hero-img">
+            </div>
+        </section>
+
+        <section id="portfolio" class="container">
+            <div class="section-title">
+                <span class="subtitle">Selección</span>
+                <h2>Obra Reciente</h2>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&q=80"
+                        alt="Retrato Editorial 1" loading="lazy">
+                    <div class="item-overlay"><span>Portrait 01</span></div>
+                </div>
+                <div class="gallery-item reveal tall">
+                    <img src="https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?auto=format&fit=crop&q=80"
+                        alt="Retrato Editorial 2" loading="lazy">
+                    <div class="item-overlay"><span>Artistic 02</span></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80"
+                        alt="Retrato Editorial 3" loading="lazy">
+                    <div class="item-overlay"><span>Soul 03</span></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80"
+                        alt="Retrato Editorial 4" loading="lazy">
+                    <div class="item-overlay"><span>Fashion 04</span></div>
+                </div>
+                <div class="gallery-item reveal wide">
+                    <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80"
+                        alt="Retrato Editorial 5" loading="lazy">
+                    <div class="item-overlay"><span>Concept 05</span></div>
+                </div>
+                <div class="gallery-item reveal">
+                    <img src="https://images.unsplash.com/photo-1488161628813-04466f872be2?auto=format&fit=crop&q=80"
+                        alt="Retrato Editorial 6" loading="lazy">
+                    <div class="item-overlay"><span>Still 06</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container about-flex">
+                <div class="about-text reveal">
+                    <span class="subtitle">Araceli Montans</span>
+                    <h2>Mirada Fotográfica</h2>
+                    <p>Mi trabajo fotográfico se centra en la captura de momentos auténticos, con un enfoque tanto
+                        documental como artístico.
+                        A través del uso de la luz, la composición y el color, busco generar imágenes que transmitan
+                        identidad, emoción y narrativa.</p>
+                    <a href="mailto:hola@araceli.com" class="btn-minimal">Hablemos</a>
+                </div>
+                <div class="about-image reveal">
+                    <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80"
+                        alt="Araceli Montans Profile" class="parallax-img">
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="container">
+            <div class="contact-box reveal">
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <p>Disponible para colaboraciones editoriales y proyectos personales.</p>
+                <div class="social-links">
+                    <a href="#">Instagram</a>
+                    <a href="#">Behance</a>
+                    <a href="#">Email</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container footer-content">
+            <p>&copy; 2024 Araceli Montans. Todos los derechos reservados.</p>
+            <p>Hecho con intención.</p>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="close-lightbox">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
