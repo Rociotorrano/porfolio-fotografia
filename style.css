@@ -272,6 +272,7 @@ header.scrolled .logo img {
     position: relative;
     overflow: hidden;
     background-color: #eee;
+    cursor: pointer;
 }
 
 .gallery-item img {
@@ -457,6 +458,8 @@ footer {
 
 .delay-1 { animation-delay: 0.3s; }
 .delay-2 { animation-delay: 0.6s; }
+.delay-3 { animation-delay: 0.9s; }
+.delay-4 { animation-delay: 1.2s; }
 
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(30px); }
@@ -468,13 +471,15 @@ footer {
     display: none;
     position: fixed;
     z-index: 2000;
-    padding-top: 50px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(255,255,255,0.98);
+    overflow: hidden;
+    background-color: rgba(0,0,0,0.85);
+    backdrop-filter: blur(8px);
+    align-items: center;
+    justify-content: center;
 }
 
 .lightbox-content {
@@ -483,16 +488,46 @@ footer {
     max-width: 90%;
     max-height: 85vh;
     animation: zoom 0.5s ease;
+    object-fit: contain;
 }
 
 .close-lightbox {
     position: absolute;
     top: 40px;
     right: 50px;
-    color: #111;
+    color: #fff;
     font-size: 60px;
     font-weight: 200;
     cursor: pointer;
+    z-index: 2001;
+    line-height: 1;
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: var(--transition-medium);
+    border-radius: 5px;
+    z-index: 2001;
+}
+
+.lightbox-nav:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.prev-lightbox {
+    left: 30px;
+}
+
+.next-lightbox {
+    right: 30px;
 }
 
 @keyframes zoom {
@@ -529,4 +564,20 @@ footer {
 .internal-page-section {
     padding-top: 150px;
     min-height: 80vh;
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--accent-color);
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    transition: var(--transition-medium);
+}
+
+.back-link:hover {
+    color: var(--text-color);
+    transform: translateX(-5px);
 }
